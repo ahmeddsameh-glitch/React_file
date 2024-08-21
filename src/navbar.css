@@ -1,0 +1,42 @@
+/* rgb(26, 33, 48)
+rgb(90, 114, 160)
+rgb(131, 180, 255)
+rgb(253, 255, 226) */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Cairo", sans-serif;
+}
+nav{
+    display: flex;
+    background-color: rgb(26, 33, 48);
+    padding:40px;
+    justify-content: flex-end;
+    border-radius: 20px;
+}
+.nav-components{
+    width:45%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 25px;
+    color:rgb(131, 180, 255);
+    transition: color 0.3s ease;
+    
+}
+.nav-link:hover{
+    color: rgb(253, 255, 226);
+    text-shadow: 5px 5px 5px rgba(253,255,226,0.4);
+}
+.AddBlogs{
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 650px;
+    color:rgb(131, 180, 255);
+    text-shadow: 5px 5px 5px rgba(253,255,226,0.4);
+}

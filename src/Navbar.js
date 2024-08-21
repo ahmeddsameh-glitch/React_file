@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect } from 'react';
-
+import './navbar.css';
 const Navbar = ({ islogged }) => {
   const navigate = useNavigate();
 
@@ -15,6 +15,7 @@ const Navbar = ({ islogged }) => {
 
   return (
     <nav>
+      <div className="AddBlogs"><p>AddBlogs</p></div>
       <div className="nav-components">
         <Link to='/Home' onClick={handleHome} className="nav-link">
           Home

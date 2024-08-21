@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-rou
 import './App.css';
 import Navbar from './Navbar';
 import Add from './Add';
+import { Helmet } from 'react-helmet';
 const App= () =>{
   const [islogged, setIslogged] = useState(false);
   const handleLogin = () => {
@@ -16,6 +17,11 @@ useEffect(() =>{
 },[]);
   return (
    <>
+   <Helmet>
+           <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+      </Helmet>
    <BrowserRouter>
    <Navbar islogged ={islogged}/>
    
