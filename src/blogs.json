@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "title": "My First Blog",
+      "author": "John Doe",
+      "content": "This is the content of my first blog"
+    },
+    {
+      "id": "2",
+      "title": "My Second Blog",
+      "author": "Ahmed Ali",
+      "content": "This is the content of my second blog"
+    },
+    {
+      "id": "3",
+      "title": "My Third Blog",
+      "author": "Mary Smith",
+      "content": "This is the content of my third blog"
+    },
+    {
+      "id": "d777",
+      "title": "ahmed",
+      "author": "mad",
+      "content": "fourth blog"
+    }
+  ]
+}
