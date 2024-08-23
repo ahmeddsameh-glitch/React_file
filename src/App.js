@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './Navbar';
 import Add from './Add';
 import { Helmet } from 'react-helmet';
+import Home from './Home';
 const App= () =>{
   const [islogged, setIslogged] = useState(false);
   const handleLogin = () => {
@@ -24,21 +25,11 @@ useEffect(() =>{
       </Helmet>
    <BrowserRouter>
    <Navbar islogged ={islogged}/>
-   
-     !islogged ? (
-      <>
-        <header>
-          <h1>Please log in to continue</h1>
-          {/* Add your login form or button here */}
-        </header>
-      </>
-    ) 
-    : (
       <Routes>
         <Route path="/add" element={<Add />} />
+        <Route path="/home" element={<Home />}/>
         {/* Add your other routes here */}
       </Routes>
-      )
    </BrowserRouter>
    </>
   );

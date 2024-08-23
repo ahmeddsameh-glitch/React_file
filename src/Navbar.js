@@ -7,9 +7,10 @@ const Navbar = ({ islogged }) => {
   const handleHome = (event) => {
     if (!islogged) {
       event.preventDefault();
-      alert('Please log in first');
+      navigate('/home');
+      // alert('Please log in first');
     } else {
-      navigate('/Home');
+     
     }
   };
 
@@ -17,7 +18,7 @@ const Navbar = ({ islogged }) => {
     <nav>
       <div className="AddBlogs"><p>AddBlogs</p></div>
       <div className="nav-components">
-        <Link to='/Home' onClick={handleHome} className="nav-link">
+        <Link to='/home' onClick={handleHome} className="nav-link">
           Home
         </Link>
         <Link to='/add' className="nav-link">

@@ -9,14 +9,30 @@ rgb(253, 255, 226) */
 }
 body{
     font-family: "Cairo", sans-serif;
+    background-color: rgba(253, 255, 226, 0.4);
 }
-nav{
+nav {
     display: flex;
     background-color: rgb(26, 33, 48);
-    padding:40px;
+    width: 100%; 
     justify-content: flex-end;
-    border-radius: 20px;
+    margin: auto;
+    height: 90px;
+    align-items: center;
+    padding: 0 10px; 
 }
+.nav-components {
+    width: 100%;
+    max-width: 900px; /* Optional max width */
+    display: flex;
+    justify-content: space-around;
+}
+/* nav::after{
+    content: '';
+    width:5px;
+    height:90px;
+    background-color: rgb(131, 180, 255);
+} */
 .nav-components{
     width:45%;
     display: flex;
@@ -33,10 +49,24 @@ nav{
     color: rgb(253, 255, 226);
     text-shadow: 5px 5px 5px rgba(253,255,226,0.4);
 }
-.AddBlogs{
+.AddBlogs {
     font-weight: bold;
     font-size: 30px;
-    margin-right: 650px;
-    color:rgb(131, 180, 255);
-    text-shadow: 5px 5px 5px rgba(253,255,226,0.4);
+    margin-right: auto; 
+    color: rgb(131, 180, 255);
+    text-shadow: 5px 5px 5px rgba(253, 255, 226, 0.4);
+    width: fit-content;
+}
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: 20px; 
+    }
+    
+    .AddBlogs {
+        font-size: 25px; 
+    }
+
+    .nav-components {
+        justify-content: space-between;
+    }
 }

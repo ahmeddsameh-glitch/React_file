@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import './add.css'
 const Add = () =>{
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
