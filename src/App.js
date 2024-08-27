@@ -25,9 +25,12 @@ useEffect(() =>{
       </Helmet>
    <BrowserRouter>
    <Navbar islogged ={islogged}/>
+   <Home/>
       <Routes>
         <Route path="/add" element={<Add />} />
-        <Route path="/home" element={<Home />}/>
+          <Route path="/home" element={<Home />}/>
+        
+        
         {/* Add your other routes here */}
       </Routes>
    </BrowserRouter>

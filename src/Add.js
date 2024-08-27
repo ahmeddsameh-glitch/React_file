@@ -38,14 +38,15 @@ const Add = () =>{
             onChange={(e) => setAuthor(e.target.value)}
             required 
             />
+            <label for="content">Content:</label>
             <textarea
              id="content"
              value={content}
              onChange={(e)=> setContent(e.target.value)}>
              </textarea>
              </div>
-             <button type="submit">Add Blog</button>
         </form>
+        <button type="submit">Add Blog</button>
         </div>
     )
 }
